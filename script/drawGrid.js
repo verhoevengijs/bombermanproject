@@ -11,7 +11,7 @@ const drawGrid = function (height, width) {
             }
         }
     });
-    wall.src = '../images/tile_wall.png';
+    wall.src = 'images/tile_wall.png';
 
 };
 drawGrid(650,750);
