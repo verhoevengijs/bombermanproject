@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d23a774b-b59a-4a7c-aeaf-298e50ed54ed" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/bombermanproject.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/bomb.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/bombfixed.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/fire.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/script/bomb.js" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/script/drawGrid.js" afterPath="$PROJECT_DIR$/script/drawGrid.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,17 +17,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="drawGrid.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="drawGrid.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/script/drawGrid.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+            <state relative-caret-position="153">
+              <caret line="9" column="188" lean-forward="false" selection-start-line="9" selection-start-column="188" selection-end-line="9" selection-end-column="188" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bomb.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bomb.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/script/bomb.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
@@ -48,7 +40,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
+            <state relative-caret-position="408">
               <caret line="24" column="7" lean-forward="false" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
               <folding />
             </state>
@@ -82,9 +74,9 @@
       <list>
         <option value="$PROJECT_DIR$/text.txt" />
         <option value="$PROJECT_DIR$/text.js" />
-        <option value="$PROJECT_DIR$/script/drawGrid.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/script/bomb.js" />
+        <option value="$PROJECT_DIR$/script/drawGrid.js" />
       </list>
     </option>
   </component>
@@ -303,7 +295,7 @@
       <workItem from="1518180799231" duration="294000" />
       <workItem from="1518971844498" duration="201000" />
       <workItem from="1519028329593" duration="41000" />
-      <workItem from="1519371889968" duration="6105000" />
+      <workItem from="1519371889968" duration="6308000" />
     </task>
     <task id="LOCAL-00001" summary="hue">
       <created>1518169732469</created>
@@ -319,11 +311,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518180942625</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="wat dingen weg gehaald">
+      <created>1519379675423</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1519379675423</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9426000" />
+    <option name="totallyTimeSpent" value="9629000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="1024" extended-state="6" />
@@ -456,9 +455,17 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/script/bomb.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
+        <state relative-caret-position="408">
           <caret line="24" column="7" lean-forward="false" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
           <folding />
         </state>
@@ -466,16 +473,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/script/drawGrid.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/bomb.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state relative-caret-position="153">
+          <caret line="9" column="188" lean-forward="false" selection-start-line="9" selection-start-column="188" selection-end-line="9" selection-end-column="188" />
           <folding />
         </state>
       </provider>

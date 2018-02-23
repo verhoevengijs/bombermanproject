@@ -7,12 +7,12 @@ const drawArena = function (height, width) {
 
     wall.addEventListener('load', function() {
         const grid = [
-            [{k:'muur'},{k:'muur'},{k:'muur'},{k:'muur'},{k:'muur'},{k:'muur'},{k:'muur'},{k:'muur'},{k:'muur'},{k:'muur'},{k:'muur'},{k:'muur'},{k:'muur'}],
+            [{k:'muur'},{k:'muur'},{k:'muur'},{k:'muur'},{k:'muur'},{k:'muur'},{k:'muur'},{k:'muur'},{k:'muur'},{k:'muur'},{k:'muur'},{k:'muur'},{k:'muur'},{k:'muur'},{k:'muur'},{k:'muur'}],
             [{k:'muur'},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''}],
             [{k:'muur'},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''}],
             [{k:'muur'},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''}],
             [{k:'muur'},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''}],
-            [{k:'muur'},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''}],
+            [{k:'muur'},{k:'muur'},{k:'muur'},{k:'muur'},{k:'muur'},{k:'muur'},{k:'muur'},{k:'muur'},{k:'muur'},{k:'muur'},{k:'muur'},{k:'muur'},{k:'muur'},{k:'muur'},{k:'muur'},{k:'muur'}],
 
         ];
 
