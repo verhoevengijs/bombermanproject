@@ -6,16 +6,28 @@ const drawArena = function (height, width) {
     const wall = new Image();
 
     wall.addEventListener('load', function() {
-        for (let xs=0;xs<=width;xs+=50){
-            for (let ys=0;ys<=height;ys+=50) {
-                ctx.strokeRect(xs,ys,50,50);    
-                ctx.drawImage(wall, 0, ys, 50, 50);
-                ctx.drawImage(wall, xs, 0, 50, 50);
-                ctx.drawImage(wall, ys, 600, 50, 50);
-                ctx.drawImage(wall, 700, xs, 50, 50);
-            }
-        }
-        
+        const grid = [
+            [{k:'muur'},{k:'muur'},{k:'muur'},{k:'muur'},{k:'muur'},{k:'muur'},{k:'muur'},{k:'muur'},{k:'muur'},{k:'muur'},{k:'muur'},{k:'muur'},{k:'muur'}],
+            [{k:'muur'},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''}],
+            [{k:'muur'},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''}],
+            [{k:'muur'},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''}],
+            [{k:'muur'},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''}],
+            [{k:'muur'},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''},{k:''}],
+
+        ];
+
+        grid.forEach(function (rows, rowindex) {
+            grid.forEach(function (obj, colindex) {
+                if (obj.k === 'b') {
+                    const b = new Bomb();
+                }
+                if (obj.k === 'muur') {
+                    const muur = new Muur();
+                }
+                ctx.strokeRect(rowindex * 50, colindex * 50, 50 ,50);
+                console.log(rowindex + ' - ' + colindex)
+            })
+        });
     });
     wall.src = 'images/tile_wall.png';
 };
