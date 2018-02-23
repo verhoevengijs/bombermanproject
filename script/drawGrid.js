@@ -1,17 +1,22 @@
-const drawGrid = function (height, width) {
+const drawArena = function (height, width) {
     const canvas = document.getElementById('canvas');
     const ctx = canvas.getContext('2d');
     ctx.canvas.width = width;
     ctx.canvas.height = height;
     const wall = new Image();
+
     wall.addEventListener('load', function() {
-        for (let x=0;x<=width;x+=50){
-            for (let y=0;y<=height;y+=50) {
-                ctx.drawImage(wall,x, y, 50, 50);
+        for (let xs=0;xs<=width;xs+=50){
+            for (let ys=0;ys<=height;ys+=50) {
+                ctx.strokeRect(xs,ys,50,50);    
+                ctx.drawImage(wall, 0, ys, 50, 50);
+                ctx.drawImage(wall, xs, 0, 50, 50);
+                ctx.drawImage(wall, ys, 600, 50, 50);
+                ctx.drawImage(wall, 700, xs, 50, 50);
             }
         }
+        
     });
     wall.src = 'images/tile_wall.png';
-
 };
-drawGrid(650,750);
+drawArena(650,750);
