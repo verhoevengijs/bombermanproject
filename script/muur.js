@@ -1,6 +1,5 @@
-function Muur(ctx, rowindex, colindex) {
+const Muur = function (ctx, rowindex, colindex) {
     let img = new Image();
-    img.src = '../images/tile_wall.png';
-    // ctx.drawImage(img,50,50);
-    ctx.fillRect(rowindex * 50, colindex * 50, 50, 50)
-}
+    img.src = 'images/tile_wall.png';
+        ctx.drawImage(img, rowindex * 50, colindex * 50, 50, 50);
+};

@@ -1,3 +1,5 @@
+'use strict';
+
 const drawArena = function (height, width) {
     const canvas = document.getElementById('canvas');
     const ctx = canvas.getContext('2d');
@@ -29,7 +31,7 @@ const drawArena = function (height, width) {
                 if (obj.k === 'muur') {
                     new Muur(ctx, rowindex, colindex);
                 }
-                ctx.strokeRect(rowindex * 50, colindex * 50, 50 ,50);
+                // ctx.strokeRect(rowindex * 50, colindex * 50, 50 ,50);
                 console.log(rowindex + ' - ' + colindex)
             })
         });
