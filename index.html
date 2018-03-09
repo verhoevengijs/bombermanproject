@@ -3,7 +3,6 @@
     <head>
         <meta charset="UTF-8">
         <title>Bomberman</title>
-        <script src="script/muur.js" defer></script>
         <style>
             body{
 
@@ -19,9 +18,15 @@
         </style>
     </head>
     <body>
-        <canvas id="canvas">
+        <img src="images/tile_wall.png" id="wall">
+        <img src="images/tile_wood.png" id="wood">
+        <img src="images/tile_grass.png" id="grass">
 
-            <script src="script/drawGrid.js"></script>
-        </canvas>
+        <canvas id="canvas"></canvas>
     </body>
+    <script src="script/bomb.js"></script>
+    <script src="script/muur.js"></script>
+    <script src="script/grond.js"></script>
+    <script src="script/grass.js"></script>
+    <script src="script/drawGrid.js"></script>
 </html>
