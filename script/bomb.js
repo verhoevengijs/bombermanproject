@@ -1,105 +1,16 @@
 const Bomb = function (x, y, strength) {
     this.position = {x: x, y: y};
+    this.time = 3000;
+    let img = new Image();
+    img = document.getElementById('bomb');
+    ctx.drawImage(img, this.position.x, this.position.y);
 
-    this.isAlive = true;
-    this.strength = strength || 1;
-
-    this.blown = [];
-
-    this.cleanUp = function () {
-        this.blown.forEach(function (spot) {
-            //	clear up explosion
-            contextBombs.clearRect(spot.x * brickSize, spot.y * brickSize, brickSize, brickSize);
-
-            let tile = getTile(spot.x, spot.y);
-
-            //	update the tile
-            updateTile(spot.x, spot.y, 'type', 'empty');
-            updateTile(spot.x, spot.y, 'canMove', true);
-
-            tile.render(tile.position.x, tile.position.y);
-
-        });
-    };
-
-    this.detonate = function () {
-        clearTimeout(this.explosionTimer);
-
-        //	make it a dud
-        this.isAlive = false;
-
-        contextBombs.fillStyle = 'rgb(231, 76, 60)';
-
-        //	clear the bomb flag from the tile
-        updateTile(this.position.x, this.position.y, 'hasBomb', false);
-
-        //	detonate the bomb
-        //	and blow any adjacent tiles
-        let blown = [
-            {
-                x: this.position.x,
-                y: this.position.y
-            },
-            {
-                x: this.position.x,
-                y: this.position.y - this.strength
-            },
-            {
-                x: this.position.x,
-                y: this.position.y + this.strength
-            },
-            {
-                x: this.position.x - this.strength,
-                y: this.position.y
-            },
-            {
-                x: this.position.x + this.strength,
-                y: this.position.y
-            }
-        ];
-
-        blown.forEach(function (spot) {
-            if (this.canExplode(spot.x, spot.y)) {
-                this.blown.push(
-                    {
-                        x: spot.x,
-                        y: spot.y
-
-                    });
-
-                updateTile(spot.x, spot.y, 'canMove', false);
-
-                contextBombs.drawImage(patternFire, spot.x * brickSize, spot.y * brickSize, brickSize, brickSize);
-            }
-
-        }, this);
-
-        //	clear up the explosion
-        setTimeout(this.cleanUp.bind(this), BOMB_CLEAR_TIMER);
-    };
-
-    this.canExplode = function (x, y) {
-        let tile = getTile(x, y);
-
-        //	check if tile can explode
-        return tile && tile.canExplode;
-    };
-
-    this.render = function () {
-        if (this.isAlive) {
-            //	clear the cell before drawing bomb
-            contextBombs.clearRect(this.position.x * brickSize, this.position.y * brickSize, brickSize, brickSize);
-
-            //	draw bomb
-            contextBombs.drawImage(iconBomb, this.position.x * brickSize, this.position.y * brickSize, brickSize, brickSize);
-
-            //	update the tile with the `hasBomb` flag
-            updateTile(this.position.x, this.position.y, 'hasBomb', true);
-
-            if (this.explosionTimer) return;
-
-            //	detonate the bomb
-            this.explosionTimer = setTimeout(this.detonate.bind(this), BOMB_TIMER);
+    this.drop = function (){
+        if (this.time !== 0){
+            this.time--;
+        }else {
+            
         }
+
     }
 };
